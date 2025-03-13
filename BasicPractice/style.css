@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+html,
+body {
+  width: 1200px;
+  font-size: 20px;
+  margin: 0;
+}
+
+header {
+  float: left;
+  /* background-color: red; */
+  height: 100px;
+  width: 1200px;
+}
+
+.top {
+  float: left;
+  height: 100px;
+  width: 200px;
+  background-color: gray;
+}
+
+.menu {
+  float: right;
+  height: 30px;
+  width: 600px;
+  background-color: gray;
+}
+
+.menu > li {
+  float: right;
+  width: 200px;
+}
+
+.imgslide {
+  float: left;
+  height: 350px;
+  width: 1200px;
+  background-color: blue;
+}
+
+.contents {
+  float: left;
+  height: 200px;
+  width: 1200px;
+  background-color: red;
+}
+
+.contents > div {
+  float: left;
+  height: 200px;
+  width: 400px;
+}
+
+footer {
+  float: left;
+  height: 120px;
+  width: 1200px;
+  background-color: gray;
+}
+
+footer > div {
+  float: left;
+  width: 800px;
+  height: 120px;
+}
+
+.site {
+  float: right;
+  width: 400px;
+  height: 120px;
+  background-color: yellow;
+}
+footer > ul {
+  float: left;
+  width: 400px;
+}
+footer > ul > li {
+  float: left;
+  height: 60px;
+  width: 400px;
+}
