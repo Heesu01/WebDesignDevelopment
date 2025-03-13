@@ -7,9 +7,10 @@ body {
   margin: 0;
 }
 
+/* 가로형 레이아웃 */
+
 header {
   float: left;
-  /* background-color: red; */
   height: 100px;
   width: 1200px;
 }
@@ -63,6 +64,82 @@ footer {
 footer > div {
   float: left;
   width: 800px;
+  height: 120px;
+}
+
+.site {
+  float: right;
+  width: 400px;
+  height: 120px;
+  background-color: yellow;
+}
+footer > ul {
+  float: left;
+  width: 400px;
+}
+footer > ul > li {
+  float: left;
+  height: 60px;
+  width: 400px;
+}
+
+/* 세로형 레이아웃 */
+
+header {
+  float: left;
+  /* background-color: red; */
+  height: 670px;
+  width: 200px;
+  background-color: red;
+}
+
+.top {
+  float: left;
+  height: 600px;
+  width: 200px;
+  background-color: pink;
+}
+
+.menu {
+  float: left;
+  width: 150px;
+}
+
+.menu > li {
+  float: left;
+  width: 150px;
+}
+
+.imgslide {
+  float: left;
+  height: 350px;
+  width: 1000px;
+  background-color: blue;
+}
+
+.contents {
+  float: left;
+  height: 200px;
+  width: 1000px;
+  background-color: red;
+}
+
+.contents > div {
+  float: left;
+  height: 200px;
+  width: 300px;
+}
+
+footer {
+  float: left;
+  height: 120px;
+  width: 1000px;
+  background-color: gray;
+}
+
+footer > div {
+  float: left;
+  width: 600px;
   height: 120px;
 }
 
