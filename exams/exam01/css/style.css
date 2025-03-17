@@ -115,6 +115,10 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.notice p :hover {
+  color: #000;
+  font-weight: bold;
+}
 .notice span {
   font-size: 12px;
   color: #999;
@@ -131,6 +135,9 @@ header {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+.photo a img:hover {
+  opacity: 0.5;
 }
 
 /* shortcut */

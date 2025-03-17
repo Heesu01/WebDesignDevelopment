@@ -9,12 +9,12 @@ jQuery(document).ready(function () {
     });
 
   // 이미지 페이드인아웃
-  $(".imgslide img").hide();
-  $(".imgslide img:first").show();
+  $(".imgslide a").hide();
+  $(".imgslide a:first").show();
   setInterval(function () {
-    $(".imgslide img:first-child")
+    $(".imgslide a:first-child")
       .fadeOut(1000)
-      .next("img")
+      .next("a")
       .fadeIn(1000)
       .end()
       .appendTo(".imgslide");
