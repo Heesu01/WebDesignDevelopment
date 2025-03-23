@@ -8,3 +8,71 @@
   font-family: "맑은 고딕", sans-serif;
   color: #333;
 }
+body {
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: lightblue;
+  display: flex;
+}
+.logo {
+  width: 30%;
+}
+nav {
+  width: 70%;
+  background-color: lightskyblue;
+}
+
+/* img-slide */
+.img-slide {
+  width: 100%;
+  height: 300px;
+  background-color: lightcoral;
+}
+
+/* contents */
+.contents {
+  width: 100%;
+  height: 200px;
+  background-color: lightcyan;
+  display: flex;
+  justify-content: space-between;
+}
+.notice {
+  width: 100%;
+  background-color: lightpink;
+}
+.banner {
+  width: 100%;
+  background-color: lightsalmon;
+}
+.shortcut {
+  width: 100%;
+  background-color: lightseagreen;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #ccc;
+  display: flex;
+}
+.footer-logo {
+  width: 20%;
+  background-color: lightgoldenrodyellow;
+}
+.copy {
+  width: 50%;
+  background-color: lightgray;
+}
+.sns {
+  width: 30%;
+  background-color: lightgreen;
+}
