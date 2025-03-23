@@ -1,10 +1,12 @@
 jQuery(document).ready(function () {
   // 메뉴
   $("nav ul li").mouseover(function () {
-    $(this).find(".submenu").stop().slideDown();
+    $(this).children(".submenu").stop().slideDown();
+    $(".submenu-bgc").stop().slideDown();
   });
   $("nav ul li").mouseout(function () {
     $(this).find(".submenu").stop().slideUp();
+    $(".submenu-bgc").stop().slideUp();
   });
 
   // 이미지슬라이드
