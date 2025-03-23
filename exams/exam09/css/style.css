@@ -9,3 +9,89 @@
   text-decoration: none;
   font-family: "맑은 고딕", sans-serif;
 }
+
+body {
+  width: 100%;
+  height: 950px;
+  background-color: lightblue;
+  position: relative;
+}
+
+.top {
+  display: flex;
+  background-color: #fff;
+}
+
+/* header */
+header {
+  min-width: 200px;
+  width: 200px;
+  height: 850px;
+  background-color: lightcoral;
+}
+.logo {
+  height: 100px;
+  background-color: lightcyan;
+}
+nav {
+}
+
+.right-contents {
+  width: 100%;
+  height: 850px;
+  background-color: lightsalmon;
+}
+
+/* img-slide */
+.img-slide {
+  width: 100%;
+  height: 400px;
+  background-color: lightgoldenrodyellow;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 200px;
+  background-color: lightgreen;
+}
+
+/* tabmenu */
+.tab {
+  width: 100%;
+  height: 250px;
+  background-color: lightpink;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: lightgrey;
+  display: flex;
+}
+.bottom-logo {
+  min-width: 200px;
+  height: 100%;
+  background-color: #fff;
+}
+.copy {
+  width: 70%;
+  height: 100%;
+  background-color: lightseagreen;
+}
+.sns {
+  width: 30%;
+  height: 100%;
+  background-color: lightskyblue;
+}
+
+/* shortcut */
+.shortcut {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 140px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
