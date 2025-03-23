@@ -27,19 +27,76 @@ header {
   min-width: 200px;
   width: 200px;
   height: 850px;
-  background-color: lightcoral;
+  padding: 30px 0;
 }
 .logo {
   height: 100px;
-  background-color: lightcyan;
+  display: flex;
+  justify-content: center;
 }
+
+/* menu */
 nav {
+  width: 100%;
+  height: 750px;
+}
+nav > ul {
+  margin: 20px 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+nav > ul > li {
+  width: 100%;
+  background-color: rgb(121, 205, 121);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 50px;
+}
+nav > ul > li:hover {
+  background-color: greenyellow;
+}
+.submenu {
+  display: none;
+  background-color: rgb(116, 181, 116);
+}
+.submenu li {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  height: 60px;
+}
+.submenu li:hover {
+  background-color: rgb(80, 94, 58);
+}
+.submenu li:hover a {
+  color: #fff;
+}
+
+nav p {
+  padding-top: 10px;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .right-contents {
   width: 100%;
   height: 850px;
-  background-color: lightsalmon;
+  background-color: rgb(224, 255, 226);
 }
 
 /* img-slide */
@@ -47,51 +104,165 @@ nav {
   width: 100%;
   height: 400px;
   background-color: lightgoldenrodyellow;
+  overflow: hidden;
+}
+.slide-list {
+  width: 100%;
+  height: 1200px;
+}
+.slide-list img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.slide-list a {
+  display: flex;
 }
 
 /* banner */
 .banner {
   width: 100%;
   height: 200px;
-  background-color: lightgreen;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
 }
 
 /* tabmenu */
 .tab {
   width: 100%;
   height: 250px;
-  background-color: lightpink;
+  padding: 20px;
+}
+.tab-menu {
+  display: flex;
+}
+.tab-menu li {
+  width: 80px;
+  text-align: center;
+  padding: 5px;
+  background-color: #eee;
+  border-radius: 5px 5px 0 0;
+}
+.tab-menu li.active {
+  background-color: #fff;
+}
+.tab-contents {
+  padding: 10px;
+  background-color: #fff;
+  height: 85%;
+  border-radius: 0 5px 5px 5px;
+  position: relative;
+}
+
+.notice {
+  width: 100%;
+  height: 100%;
+}
+.notice ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+.notice a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* display: none; */
 }
 
 /* footer */
 footer {
-  width: 100%;
+  width: 100vw;
   height: 100px;
-  background-color: lightgrey;
+  background-color: #31241f;
   display: flex;
 }
 .bottom-logo {
   min-width: 200px;
   height: 100%;
-  background-color: #fff;
 }
 .copy {
   width: 70%;
-  height: 100%;
-  background-color: lightseagreen;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-weight: 300;
+  color: #eee;
+  font-size: 14px;
 }
 .sns {
   width: 30%;
   height: 100%;
-  background-color: lightskyblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.sns img {
+  border-radius: 10px;
+  width: 80%;
 }
 
 /* shortcut */
 .shortcut {
   position: fixed;
   right: 0;
-  top: 0;
-  width: 140px;
+  top: 10px;
+  width: 120px;
   height: 300px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.shortcut img {
+  width: 80px;
+  border-radius: 20px;
+}
+
+/* modal */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  width: 400px;
+  border-radius: 5px;
+  display: none;
+}
+.modal h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.modal-contents {
+  margin: 40px 0;
+  line-height: 1.5em;
+}
+.modal button {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
 }
